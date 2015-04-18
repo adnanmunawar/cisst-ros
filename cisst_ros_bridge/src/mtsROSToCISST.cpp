@@ -231,4 +231,10 @@ void mtsROSToCISST(const cisst_msgs::prmFixtureGainCartesianSet & rosData, prmFi
   mtsROSToCISST(rosData.TorqueBiasNeg, vct3Data);
   cisstData.SetTorqueBiasNeg(vct3Data);
 }
-
+// JUST IMPLEMENTING FOR MTM FOR NOW
+// Make sure not to use for PSM
+void mtsROSToCISST(const std_msgs::Bool & rosData, vctBoolVec & cisstData)
+{
+    vctBoolVec Data(8, rosData.data);
+    cisstData = Data;
+}

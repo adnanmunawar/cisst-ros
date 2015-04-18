@@ -71,5 +71,6 @@ void mtsROSToCISST(const sensor_msgs::JointState & rosData, prmForceTorqueJointS
 void mtsROSToCISST(const cisst_msgs::vctDoubleVec & rosData, prmPositionJointSet & cisstData);
 void mtsROSToCISST(const cisst_msgs::vctDoubleVec & rosData, vctDoubleVec & cisstData);
 void mtsROSToCISST(const cisst_msgs::prmFixtureGainCartesianSet & rosData, prmFixtureGainCartesianSet & cisstData);
+void mtsROSToCISST(const std_msgs::Bool & rosData, vctBoolVec & cisstData);
 
 #endif // _mtsROSToCISST_h
